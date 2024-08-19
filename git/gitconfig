@@ -1,0 +1,24 @@
+[user]
+	name = Yaqi Han
+	email = han82358979@gmail.com
+[core]
+	editor = code --wait
+	autocrlf = true
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[alias]
+#	lg = log --pretty=format:'%an committed %h'
+	unstage = restore --staged .
+	st = status
+	lg = log --oneline --all --graph
+[merge]
+#	ff = no
+	tool = p4merge
+[mergetool "p4merge"]
+	path = C:\\Program Files\\Perforce\\p4merge
+[mergetool]
+	keepBackup = false
+[https]
+	proxy = 127.0.0.1:8890

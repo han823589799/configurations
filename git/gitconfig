@@ -4,6 +4,7 @@
 [core]
 	editor = code --wait
 	autocrlf = true
+	pager =
 [diff]
 	tool = vscode
 [difftool "vscode"]
